@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  --bg: #08090c;
+  --panel: #101218;
+  --white: #f5f6fa;
+  --muted: #9298a6;
+  --red: #ff243b;
+  --red-hover: #ff475b;
+  --red-glow: rgba(255, 36, 59, 0.2);
+  --line: #272b35;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--white);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    selection-background-color: #ff243b;
+    selection-color: #ffffff;
+  }
+  
+  ::selection {
+    background-color: rgba(255, 36, 59, 0.35);
+    color: #ffffff;
+  }
+
+  code, pre, kbd {
+    font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Subtle Red/Black atmospheric background */
+.asthex-bg {
+  background:
+    radial-gradient(ellipse at 50% 15%, rgba(255, 36, 59, 0.08) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 75%, rgba(180, 15, 30, 0.05) 0%, transparent 50%),
+    linear-gradient(#08090c, #08090c);
+}

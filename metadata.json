@@ -1,0 +1,6 @@
+{
+  "name": "Asthex - Laboratório & Portal de Estudos da Linguagem",
+  "description": "Portal oficial de engenharia, arquitetura e trilha de estudos da linguagem de programação Asthex (.astun): física dimensional, alta performance e computação de silício.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
